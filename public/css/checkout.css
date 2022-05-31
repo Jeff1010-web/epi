@@ -1,0 +1,28 @@
+body{
+    display: block;
+    background: #fff;
+}
+.form{
+    width: 100%;
+    padding: 20px 10vw;
+}
+.heading{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.form input{
+    background: rgb(241, 235, 235) !important;
+    width: 100% !important;
+}
+.three-input-container{
+    display: flex;
+    justify-content: space-between;
+}
+.three-input-container input{
+    margin: 0 !important;
+}
+#state{
+    margin: 0 20px !important;
+}

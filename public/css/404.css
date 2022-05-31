@@ -1,0 +1,22 @@
+.four-0-four-image{
+    display: block;
+    margin: 60px auto;
+}
+.four-0-four-msg{
+    text-align: center;
+    text-transform: capitalize;
+    color: #383838;
+}
+.four-0-four-msg a{
+    color: #383838;
+}
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}

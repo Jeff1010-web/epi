@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epiphany best online store</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+    <nav class="navbar"></nav>
+    <!--hero section-->
+    <header class="hero-section">
+        <div class="content">
+            <img src="images/ll.jpg" class="logo" alt="">
+            <p class="sub-heading">Best fashion collection for you</p>
+
+        </div>
+
+    </header>
+    <section id="men-tshirt-products"></section>
+    <section id="Women"></section>
+
+    
+    <section class="collection-container">
+        <a href="" class="collection">
+            <img src="images/bl2.jpg" alt="">
+            <p class="collection-title">Women <br> products</p>
+        </a>
+        <a href="" class="collection">
+            <img src="images/we.jpg" alt="">
+            <p class="collection-title">Men <br> products</p>
+        </a>
+        <a href="" class="collection">
+            <img src="images/bn.jpg" alt="">
+            <p class="collection-title">Accessories <br> products</p>
+        </a>
+
+
+
+    </section>
+    <section id="men-tshirt-products-2"></section>
+    <footer>
+       
+    </footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/home.js"></script>
+    <script>
+        getProducts('Accessories').then(data => createProductSlider(data, '#men-tshirt-products', 'Accessories'))
+        getProducts('Accessories').then(data => createProductSlider(data, '#men-tshirt-products-2', 'Accessories'))
+        getProducts('Women').then(data => createProductSlider(data, '#Women', 'Women'))
+
+    </script>
+    
+</body>
+</html>

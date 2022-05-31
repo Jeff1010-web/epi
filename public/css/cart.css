@@ -1,0 +1,224 @@
+.cart-section{
+    width: 100%;
+    padding: 20px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+.product-lists{
+    width: 60%;
+
+}
+
+.checkout-section{
+    width: 28%;
+}
+.section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+.cart, .wishlist{
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+    margin-bottom: 60px;
+}
+.sm-product{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+.cart .sm-product:last-child, .wishlist .sm-product:last-child{
+    margin-bottom: 0;
+
+}
+.sm-product-img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.sm-text{
+    width: 50%;
+}
+.sm-product-name{
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.sm-des{
+    font-size: 18px;
+    opacity: 0.5;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.item-counter{
+    width: 90px;
+    height: 30px;
+    display: flex;
+    margin-right: 20px;
+}
+.counter-btn, .item-count{
+    width: 30px;
+    height: 30px;
+}
+.counter-btn{
+    border: none;
+    background: #f3f3f3;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 1px;
+    cursor: pointer;
+}
+.item-count{
+    text-align: center;
+    line-height: 30px;
+    background: #f5f5f5;
+}
+.sm-price{
+    font-size: 50px;
+    font-weight: 500;
+    color: #383838;
+}
+.sm-delete-btn{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid rgb(216, 216, 216);
+    z-index: 2;
+    cursor: pointer;
+}
+.sm-delete-btn img{
+    height: 15px;
+}
+.sm-price{
+    font-size: 20px;
+}
+.empty-img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.checkout-box{
+    width: 100%;
+    height: 200px;
+    border-radius: 2px;
+    border: 1px solid #eeaaaa;
+    padding: 20px;
+}
+.text{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.checkout-btn, .place-order-btn{
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 5px;
+    background: #383838;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.bill{
+    font-size: 35px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+    @media screen and (max-width: 768px) {
+        .cart-section {
+            
+           display: flex;
+           flex-direction: column;
+           width: 100%;
+           padding: 17px 2vw 12px;
+        }
+        .cart, .wishlist {
+            width: 160%;
+            box-sizing: content-box;
+            padding: 5px;
+            box-sizing: inherit;
+            box-sizing: initial;
+            box-sizing: revert;
+            box-sizing: unset;
+           
+
+
+        }
+        .sm-text {
+            margin-left: 2px;
+        }
+        .checkout-box {
+            width: 150%;
+            box-sizing: content-box;
+            
+        }
+        .heading {
+            font-size: 28px;
+        }
+        .text {
+            font-size: 15px;
+        }
+        .bill {
+            font-size: 25px;
+        }
+        .checkout-btn, .place-order-btn {
+           
+            height: 35px;
+            
+            line-height: 35px;
+        }
+        .sm-product-img {
+            height: 70px;
+            width: 70px;
+            border-radius: 3px;
+        }
+        .sm-delete-btn img {
+            height: 8px;
+        }
+        .counter-btn, .item-count {
+            width: 20px;
+            height: 20px;
+        }
+        .counter-btn, .item-count {
+            width: 20px;
+            height: 20px;
+        }
+        .item-count {
+            width: 20px;
+            height: 20px;
+            font-size: 15px;
+        }
+        .sm-product-name {
+            font-size: 13px;
+        
+        }
+        .sm-des {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        .sm-price {
+            font-size: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+    }

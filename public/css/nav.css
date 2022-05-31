@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #00008B;
+    z-index: 9;
+}
+.nav{
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+.brand-logo{
+    height: 60px;
+}
+.nav-items{
+    align-items: center;
+    display: flex;
+}
+.search{
+    width: 500px;
+    display: flex;
+}
+.search-box{
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #e2db0e;
+    text-transform: capitalize;
+    background: none;
+    color: #fff;
+    outline: none;
+}
+.search-btn{
+    width: 20%;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: darkgoldenrod;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.search-box::placeholder{
+    color: rgb(196, 199, 35);
+}
+.nav-items a{
+    margin-left: 20px;
+    position: relative;
+}
+.nav-items a img{
+    width: 30px;
+    cursor: pointer;
+}
+.link-container{
+    width: 100%;
+    display: flex;
+    padding: 10px 10vw;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid #d0ca0a;
+}
+.link{
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.link:hover{
+    opacity: 1;
+}
+.login-logout-popup{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    top: 40px;
+    width: 200px;
+    transition: .5s;
+    border: 2px solid #f5f5f5;
+}
+.login-logout-popup::after{
+    content: '';
+    position: absolute;
+    top: -7.5px;
+    left: 50%;
+    transform: translateX(-50) rotate(45deg);
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 5px;
+}
+.account-info{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+#user-btn{
+    padding: 10px;
+    background: #f7c12c;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+@media (max-width: 477) {
+    #header {
+        padding: 10px 30px;
+       
+    }
+}
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+
+    .search-box {
+        width: 20%;
+        height: 20px;
+        padding: 8px;
+        display: flex;
+        margin-left: -30px;
+        float: left;
+        left: -20px !important;
+      
+    }
+    .search-btn p{
+        display: none;
+        opacity: 0;
+    }
+    .search-btn {
+        width: 10%;
+        height: 20px;
+        padding: 10px 20px;  
+    }
+    .brand-logo {
+        height: 30px;
+        margin-right: 0%;
+        padding-right: 0%;
+        position: relative;
+        left: -35px !important;
+    }
+    .nav-items a img {
+        width: 100%;
+        position: relative;
+        left: -320px !important;
+       
+    }
+    .login-logout-popup{
+        left: -320px !important;
+    }
+    body {
+        flex-direction: column;
+        font-size: 20px;
+
+      }
+      
+    #mobile {
+        display: flex;
+        align-items: center;
+        
+    }
+    .link{
+        opacity: 0;
+        display: none;
+    }
+    .hero-section {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+    .hero-section .logo {
+        height: 50px;
+        display: block;
+        margin: auto;
+    }
+    .hero-section .sub-heading {
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .product-category {
+       
+        font-size: 15px;
+
+    }
+    .product-thumb {
+        width: 90%;
+        height: 350px;
+        
+    }
+    .discount-tag {
+        padding: 2px;
+        border-radius: 5px;
+        color: #ff7d7d;
+        align-items: center;
+        right: 8px;
+    }
+    .nxt-btn {
+        border: none;
+        width: 5vw;
+        height: 100%;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 8;
+    }
+    .product-brand {
+        font-size: 15px;
+    }
+    .product-shot-des {
+       
+        height: 20px;
+        line-height: 20px;
+        font-size: 14px;
+        
+    }
+    .price {
+        font-size: 13px;
+    }
+    .actual-price {
+        font-size: 13px;
+       
+    }
+    .collection-container {
+       flex-direction: column !important;
+       display: flex;
+    }
+    .collection p {
+       
+        font-size: 30px;
+    }
+    .collection img {
+        
+        height: 90%;
+       
+    }
+    .footer-content .logo {
+        height: 40px;
+    }
+    .category-title {
+        display: flex;
+        font-size: 15px;
+        flex-direction: column;
+    }
+    .category {
+        display: flex;
+        flex-direction: column !important;
+        align-items: flex-start;
+
+    }
+    .category .footer-link {
+        justify-content: space-between;
+        font-size: 17px;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-title {
+       font-size: 18px;
+    }
+    .footer-title, .info {
+        font-size: 17px;
+    }
+    .footer-social-container {
+        display: flex;
+       flex-direction: column;
+    }
+    
+    .footer-credit {
+        width: 100%;
+        font-size: 16px;
+    }
+} 
+@media only screen and (max-width: 740px) {
+        .navbar {
+          padding: 0.5em 1em !important;
+        }
+        .nav-items a img {
+            width: 80%;
+            left: -350px !important;
+           
+        }
+        .login-logout-popup{
+            left: -350px !important;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            border-radius: 10px;
+            top: 40px;
+            width: 100px;
+        }
+      }

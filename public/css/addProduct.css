@@ -1,0 +1,128 @@
+body{
+    display: block;
+    padding: 0 10vw;
+}
+.logo{
+    margin: 20px auto 50px;
+
+}
+input, textarea{
+    font-weight: 500;
+}
+input:not(input[type="checkbox"]){
+    width: 100% !important;
+}
+textarea{
+    width: 100%;
+    height: 270px;
+    resize: none;
+    padding: 10px 20px;
+
+    
+}
+.product-info{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: .75fr 1.25fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.product-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    background-size: cover;
+    border-radius: 18px;
+    grid-row: span 2;
+    text-shadow: 0 0 10px #fff;
+}
+
+
+.text{
+    text-transform: capitalize;
+    color: #383838;
+    font-size: 20px;
+    font-weight: 500;
+}
+.upload-image-sec, .select-sizes{
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+.text img{
+    height: 20px;
+    margin-right: 10px;
+}
+.upload-catalouge{
+    width: 100%;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+}
+.upload-image {
+    width: 100%;
+    height: 100px;
+    background: #f5f5f5;
+    cursor: pointer;
+    background-size: cover;
+}
+.upload-image:hover{
+    background: rgba(0, 0, 0, 0.2);
+    background-size: cover;
+}
+.sizes{
+    margin-top: 30px;
+}
+.size-checkbox{
+    -webkit-appearance: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #383838;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    position: relative;
+    color: #383838;
+}
+.size-checkbox::after{
+    content: attr(value);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.size-checkbox:checked{
+    background: #383838;
+    color: #fff;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.product-price{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.product-price input{
+    margin: 0;
+}
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
